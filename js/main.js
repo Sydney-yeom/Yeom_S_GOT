@@ -108,6 +108,11 @@
           }
      }
 
+     var trailer = document.getElementById("videoClosing");
+     trailer.onended = function() {
+     lightbox.classList.remove('show-lightbox')
+     };
+
      // sigils.forEach(sigil => sigil.addEventListener('click', animateBanner));
      
      sigils.addEventListener('click', animateBanner);
